@@ -1,0 +1,334 @@
+#NEXUS
+[ File output by Morphobank v4.0 (http://www.morphobank.org); 2026-9-6 01.57.54 ]
+BEGIN TAXA;
+	DIMENSIONS NTAX=29;
+	TAXLABELS
+		'Calyptaulax glabella'
+		'Acernaspis orestes'
+		'Barrandeops granulops'
+		'Austerops smoothops'
+		'Barrandeops ovatus'
+		'Phacops araw'
+		'Austerops speculator punctatus'
+		'Austerops kermiti'
+		'Austerops salamandar'
+		'Boeckops stelcki'
+		'Barrandeops lebesus'
+		'Barrandeops forteyi'
+		'Reedops pembertoni'
+		'Reedops cephalotes hamlagdadianus'
+		'Reedops bronni'
+		'Pedinopariops (Pedinopariops) lentigifer'
+		'Pedinopariops (Hypsipariops) vagabundus'
+		'Drotops megalomanicus'
+		'Drotops armatus'
+		'Eldredgeops rana rana'
+		'Chotecops auspex'
+		'Boeckops boecki'
+		'Paciphacops logani'
+		'Viaphacops cristatus'
+		'Geesops schlotheimi'
+		'Phacops latifrons'
+		'Morocops struvei'
+		'Kainops microps'
+		'Ananaspis fecunda'
+	;
+ENDBLOCK;
+BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=40;
+	FORMAT DATATYPE=STANDARD GAP=- MISSING=? SYMBOLS="0123456";
+	CHARLABELS
+		[1] 'Glabellar width [1 modified]'
+		[2] 'Occipital ring width [3]'
+		[3] 'Intercalating ring [4 modified]'
+		[4] 'L1 lateral lobe size [5]'
+		[5] 'Length of L2 versus length of L3 [6 modified]'
+		[6] 'Granules on glabella [7 modified]'
+		[7] 'Tubercles on glabella [8 modified]'
+		[8] 'Postocular area length [11]'
+		[9] 'Lateral border furrow [12 modified]'
+		[10] 'Palpebral area height [13 modified]'
+		[11] 'Lateral L1 definition and shape [14 modified]'
+		[12] 'Palpebral furrow definition [15]'
+		[13] 'Genal angle [16]'
+		[14] 'Palpebral sculpture [19 modified]'
+		[15] 'Terrace lines'
+		[16] 'Definition of lateral axial lobes [21 modified]'
+		[17] 'Sclera in eyes [23]'
+		[18] 'Vincular furrow [24 modified]'
+		[19] 'Width of pygidial axis [26 modified]'
+		[20] 'Closure of pygidial axis'
+		[21] 'lnterannular rings [27 modified]'
+		[22] 'Number of axial rings'
+		[23] 'Number of clear pleural ribs'
+		[24] 'Depth of pleural furrows [31]'
+		[25] 'Number of vertical rows in eye'
+		[26] 'Maximum number of lenses per vertical row'
+		[27] 'Subocular pad'
+		[28] 'Pygidial axis length [29 modified]'
+		[29] 'Thorax shape'
+		[30] 'Degree of glabellar overhang'
+		[31] 'Degree of glabellar divergence'
+		[32] '''Marginulation'''
+		[33] 'Posterior border spines or tubercle row'
+		[34] 'S1 medial continuity'
+		[35] 'Doublure sculpture'
+		[36] 'Base of visual surface with tubercles'
+		[37] 'Sculpture on pygidium'
+		[38] 'Accessory lens row'
+		[39] 'Interpleural furrow strength [32 modified]'
+		[40] 'Sculpture upon sclera'
+	;
+	STATELABELS
+		1
+			'51-55.9%'
+			'56.0-60.9%'
+			'61.0-65.9%'
+			'66.0-70.9%'
+			'71.0-75.9%'
+			,
+		2
+			'>/=38%'
+			'36.0-37.9%'
+			'34.0-35.9%'
+			'32.0- 33.9%'
+			'0-31.9%'
+			,
+		3
+			'small, subtriangular, displaying independent inflation, and typically barren of sculpture (e.g., Reedops bronni, Pl. 1.9)'
+			'mid-sized to large, raised pad with sculpture (e.g., Barrandeops forteyi, Pl. 16.2)'
+			'small, circumscribed by furrows, set anterior to L1 lateral lobes (e.g., Phacops araw, Pl. 18.4)'
+			'faint or absent with no sculpture (e.g., Austerops kermiti, Pl. 8.7)'
+			,
+		4
+			'L1 lateral very small (e.g., Acernaspis orestes, see Chatterton and Ludvigsen, 2004, pl. 28)'
+			'(1) L1 lateral medium-sized (e.g., Phacops araw, Pl. 18.4)'
+			'L1 lateral large, with distinct adaxial edge (e.g., Barrandeops ovatus, Pl. 13.5)'
+			'L1 lateral large, with indistinct adaxial edge (e.g., Austerops kermiti, Pl. 8.7)'
+			,
+		5
+			'40-49%'
+			'50-59%'
+			'60-69%'
+			'>/=70%'
+			,
+		6
+			'granules present on all convex surfaces (e.g., Acernaspis orestes, Chatterton and Ludvigsen, 2004, pl. 33)'
+			'granules reduced between tubercles (e.g., Paciphacops logani, Campbell, 1977; pl. 12-13)'
+			'granules absent between tubercles (e.g., Austerops speculator punctatus, Pl. 6.9)'
+			,
+		7
+			'tubercles absent or bordering on granule-size (e.g., Reedops pembertoni, Pl. 4.10)'
+			'tubercles weak, sparse (e.g., Boeckops stelcki, Pl. 11.8)'
+			'tubercles distinct, medium density (e.g., Barrandeops lebesus, see Chatterton et al., 2006, pl. 3)'
+			'tubercles distinct to coarse, high density (e.g., Barrandeops forteyi, Pl. 17.5)'
+			'tubercles pustular, dense (e.g., Eldredgeops rana rana, see Eldredge, 1972, fig. 4)'
+			'tubercles pustular, relatively sparse (e.g., Phacops araw, Pl. 18.2)'
+			'tubercles tall, conical or spinose (e.g., Drotops megalomanicus, see Struve, 1995, pl. 1)'
+			,
+		8
+			'less than half the length of posterior border'
+			'half to equal length of posterior border'
+			'longer than posterior border'
+			,
+		9
+			'absence or hint of furrow, pad fades distally (e.g., Reedops pembertoni, Pl. 4.11)'
+			'narrow weak furrow, pad has poorly defined tip (e.g., Phacops araw, Pl. 18.6);'
+			'narrow deep furrow, pad has sharply defined tip (e.g., Barrandeops forteyi, Pl. 16.12)'
+			'wide distinct furrow, pad has rounded tip (e.g., Barrandeops ovatus, Pl. 14.10)'
+			'wide shallow furrow, pad has gently sloping tip (e.g., Pedinopariops (Hypsipariops) vagabundus, Pl. 19.6)'
+			,
+		10
+			'regions are about level'
+			'palpebral area lower than palpebral lobe'
+			'palpebral area markedly higher than lobe'
+			,
+		11
+			'distinct, globular, unornamented'
+			'distinct, globular, ornamented'
+			'indistinct, nearly flat, unornamented.'
+			,
+		12
+			'faint to absent (e.g.,Austerops kermiti, Pl. 8.7)'
+			'weak (e.g., Barrandeops ovatus, Pl. 13.5)'
+			'distinct (e.g., Barrandeops forteyi, Pl. 17.5)'
+			'deep (e.g., Paciphacops birdsongensis, Campbell, 1977, pl. 11)'
+			,
+		13
+			'drawn out, with acute tip or large spine (e.g., Viaphacops cristatus, see Eldredge, 1973, fig. 20)'
+			'drawn out, with small spine (e.g., Reedops pembertoni, Pl. 4.11)'
+			'rounded angular, with distinct node at corner (e.g., Boeckops stelcki, Pl. 12.3)'
+			'rounded, with or without hint of node (e.g., Barrandeops forteyi, Pl. 17.9)'
+			,
+		14
+			'even surface'
+			'pitted surface'
+			'perforated appearance, with deep, wide pits'
+			'smooth between tubercles'
+			,
+		15
+			'absent or nearly so'
+			'on ventral margin only'
+			'on glabella, cheek, and ventral margin'
+			,
+		16
+			'lobes are strongly defined, furrow runs halfway across occipital ring'
+			'lobes are weak to distinctly inflated, moderately defined'
+			'distinct lobes are absent or effaced, poorly defined'
+			,
+		17
+			'thin sclera throughout'
+			'sclera slightly thickened, dorsally only'
+			'sclera considerably thickened dorsally, only weakly ventrally'
+			'entire sclera surface thickened'
+			,
+		18
+			'wide, shallow'
+			'deep, distinct'
+			'completely absent medially, or only shown through sculpture'
+			,
+		19
+			'25-29.9%'
+			'30-34.9%'
+			'35-39.9%'
+			,
+		20
+			'nearly complete closure, with mild postaxial ridge (e.g., Barrandeops forteyi, Pl. 16.8)'
+			'minor closure, often with strong postaxial ridge (e.g., Austerops kermiti, Pl. 8.8)'
+			,
+		21
+			'widened furrow or hint of ring (e.g., Barrandeops forteyi, Pl. 15.6)'
+			'distinct ring present (e.g., Austerops kermiti, Pl. 8.8)'
+			'strong ring, near level with axial ring in front, and sculpted (e.g., Calyptaulax glabella, Ludvigsen and Chatterton, 1982, pl. 4)'
+			,
+		22
+			'7-11 well defined rings, relatively numerous'
+			'4-6 well defined rings, relatively few'
+			,
+		23
+			'2-5 clear pleural ribs, comparatively few'
+			'6-10 clear pleural ribs, comparatively many'
+			,
+		24
+			'weak, thin pleural furrows (e.g., Reedops pembertoni, Pl. 4.6)'
+			'deep, thin pleural furrows (e.g., Austerops kermiti, Pl. 8.8)'
+			'deep, steep-sided to mediumwide pleural furrows (e.g., Barrandeops ovatus, Pl. 14.9)'
+			'deep, wide pleural furrows, usually with semi-circular profiles (e.g., Phacops araw, Pl. 18.10)'
+			,
+		25
+			'14-16'
+			'17'
+			'18'
+			'19'
+			'21'
+			'25'
+			,
+		26
+			'4'
+			'5'
+			'6'
+			'7'
+			'8'
+			'9'
+			,
+		27
+			'absent (e.g., Austerops kermiti, Pl. 9.7)'
+			'weak (e.g., Phacops araw, Pl. 18.6)'
+			'strong (e.g., Barrandeops forteyi, Pl. 15.5)'
+			,
+		28
+			'short, <84%'
+			'long, >84%'
+			'exceptionally short, <78%'
+			'exceptionally long, >89%'
+			,
+		29
+			'strong taper, last segment <80% of first segment''s total width'
+			'weak taper, last segment >80% of first segment''s total width'
+			,
+		30
+			'no overhang'
+			'frontal face of glabella vertical or with mild overhang'
+			'high degree of overhang'
+			,
+		31
+			'low, <60"?'
+			'moderate, 60-70"?'
+			'high, >70"?'
+			,
+		32
+			'rim incomplete or absent'
+			'rim complete, reaching almost or fully to genal angle'
+			,
+		33
+			'absent'
+			'present'
+			,
+		34
+			'discontinuous or effaced furrow'
+			'continuous furrow'
+			,
+		35
+			'relatively equidimensional granules dominant'
+			'short, broken terrace lines, or granules severely elongated transversely'
+			'fully developed, largely continuous tenace lines dominant'
+			,
+		36
+			'absent'
+			'present'
+			,
+		37
+			'tubercles absent'
+			'tubercles restricted to axis only'
+			'tubercles faintly present on pleural ribs and axis'
+			'tubercles moderately to strongly present on pleural ribs, and also upon border and axis'
+			,
+		38
+			'absent'
+			'present'
+			,
+		39
+			'weak to completely absent'
+			'moderately impressed'
+			,
+		40
+			'tubercles absent'
+			'tubercles on thickened sclera, lenses in cruciform arrangement'
+			'tubercles on thickened sclera, lenses in hexagonal arrangement'
+			,
+	;
+	MATRIX
+	'Calyptaulax glabella'                          1032?00000002000??0120005000?00?00??0?1?
+	'Acernaspis orestes'                            0200300000013000012000010300000000000100
+	'Barrandeops granulops'                         2312?23122113310211010023111012101113000
+	'Austerops smoothops'                           2313121100103112110010012100011000202000
+	'Barrandeops ovatus'                            2212223132113311211000023121011101113000
+	'Phacops araw'                                  2121?25010013122311100132012012?00213000
+	'Austerops speculator punctatus'                2113121000103111111110012410111000202000
+	'Austerops kermiti'                             1333121000203122100111012501?10000201000
+	'Austerops salamandar'                          2303121000103112111111012300010000201000
+	'Boeckops stelcki'                              4012122030112110112010022310111000103000
+	'Barrandeops lebesus'                           2312222132113310211010023211011101113000
+	'Barrandeops forteyi'                           2112223122123311312000022020012101113001
+	'Reedops pembertoni'                            2133120100201002020001002302111100001000
+	'Reedops cephalotes hamlagdadianus'             3213220232212300121001005502121100001000
+	'Reedops bronni'                                2213120232212002000000000400021100001000
+	'Pedinopariops (Pedinopariops) lentigifer'      1212?23130022?113101?013242??11101213002
+	'Pedinopariops (Hypsipariops) vagabundus'       0412224130022111310110132313111111213002
+	'Drotops megalomanicus'                         1223?26140122311311110132213111111213002
+	'Drotops armatus'                               1323?26140022311311110132313111111213002
+	'Eldredgeops rana rana'                         1313?24140213212311000131211?11101??3000
+	'Chotecops auspex'                              2113?12232213012100011000301011000101000
+	'Boeckops boecki'                               2012?22120012?10102000014402?21000102000
+	'Paciphacops logani'                            1212313131111?00212110121211?11001100110
+	'Viaphacops cristatus'                          1321023131210?01312110110210?12000103110
+	'Geesops schlotheimi'                           0321?23141012?12311010122213111111?13000
+	'Phacops latifrons'                             1221?2403002312231??0013001?001001203000
+	'Morocops struvei'                              032112314101??1231??????221??11111?1?0?0
+	'Kainops microps'                               2121013232112?00201110122411?11001102010
+	'Ananaspis fecunda'                             1311213120013000000000133301?01000000110
+;
+ENDBLOCK;
+BEGIN ASSUMPTIONS;
+TYPESET * UNTITLED = unord: 1-40;
+ENDBLOCK;

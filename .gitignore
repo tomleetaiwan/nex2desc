@@ -1,0 +1,24 @@
+# Python 虛擬環境
+.venv/
+venv/
+env/
+ENV/
+
+# Python 編譯/快取產物
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 打包/發行相關
+build/
+dist/
+*.egg-info/
+
+# 程式輸出的檢索表（每次執行皆會重新產生）
+generated/
+
+# 編輯器/系統產生的檔案
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
