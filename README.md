@@ -1,6 +1,6 @@
 # nex2desc
 
-以 Python 讀取 PAUP* / NEXUS .nex 形態特徵資料，選擇一個或多個物種，輸出 Markdown 比較表。只使用標準函式庫，不需要安裝第三方套件。
+以 Python 讀取 [PAUP*](https://paup.phylosolutions.com/) / [NEXUS](https://en.wikipedia.org/wiki/Nexus_file) .nex 形態特徵資料，選擇一個或多個物種，輸出 Markdown 比較表。只使用標準函式庫，不需要安裝第三方套件。
 
 ## 環境
 
@@ -50,12 +50,8 @@ python .\nex2desc.py .\2009-early-and-middle-devonian-phacopidae-of-south-morocc
   未加引號的名稱中的底線依 NEXUS 慣例轉為空白。
 - Markdown 特殊字元、HTML 字元、管線與換行會跳脫，避免破壞表格。
 
-例如選擇範例檔案的前兩個物種：
-
-| 特徵 | Calyptaulax glabella | Acernaspis orestes |
-| --- | --- | --- |
-| 1. Glabellar width \[1 modified\] | 1: 56.0-60.9% | 0: 51-55.9% |
-| 2. Occipital ring width \[3\] | 0: &gt;/=38% | 2: 34.0-35.9% |
+這是選取了六個物種後輸出的比較表：
+![輸出表格範例](./images/table.png)
 
 ## 支援範圍與錯誤處理
 
@@ -65,9 +61,7 @@ python .\nex2desc.py .\2009-early-and-middle-devonian-phacopidae-of-south-morocc
 
 ### 必要內容與 NEXUS 格式差異
 
-- .nex 副檔名不代表檔案一定包含特徵名稱與狀態說明。不同軟體使用的
-- NEXUS 檔案可能沒有 CHARLABELS 或 STATELABELS，即使檔案本身是合法的
-- NEXUS，也不一定能由本工具轉換。是否由 PAUP* 使用或產生，也不能取代內容檢查。
+- .nex 副檔名不代表檔案一定包含特徵名稱與狀態說明。不同軟體使用的 NEXUS 檔案可能沒有 CHARLABELS 或 STATELABELS，即使檔案本身是合法的 NEXUS，也不一定能由本工具轉換。 .nex 是否由 PAUP* 所產生，也不能取代內容格式檢查。
 
 為了產生具備文字說明的比較表，本工具要求輸入包含：
 
